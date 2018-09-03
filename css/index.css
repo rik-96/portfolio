@@ -1,9 +1,15 @@
+html{
+  background: url(../back1.jpeg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 100%;
+  overflow: hidden;
+}
 body {
     margin: 0;
-    background-color: #221E1D;
     color: white;
-    background-image: url(../back1.jpeg);
-    background-size: cover;
 }
 
 #logo {
@@ -88,24 +94,25 @@ hr {
     text-align: center;
     font-family: monospace;
     letter-spacing: .15em;
-    margin: 5% auto;
+    margin: 8% auto 3% auto;
     overflow: hidden;
     white-space: nowrap;
     animation: typing 4s steps(40, end);
 }
 
 #skills{
+    margin: 10% 0 0 3%;
     display: none;
     color: white;
 }
 
 .hd1{
-    font-size: calc(6px + 1.8vw);
+    font-size: calc(8px + 1.3vw);
 }
 
 .hd2{
     margin-top: 2%;
-    font-size: calc(4px + 1.5vw);
+    font-size: calc(6px + 1vw);
     width: 70%;
 }
 
@@ -120,7 +127,7 @@ hr {
 
 #know-more {
   bottom: 0;
-  font-size: calc(4px + 1vw);
+  font-size: calc(6px + 1vw);
   font-family: monospace;
   margin-left: 45%;
   margin-bottom: 2%;
@@ -129,7 +136,7 @@ hr {
 }
 
 #know-more a{
-  color: white;
+  color: #e96232;
   text-decoration: none;
   padding: 0.5em 0.75em;
   text-align: center;
@@ -185,7 +192,11 @@ hr {
     line-height: 30px;
     font-size: 13px;
     }
+    .text-appear{
+      margin: 20% auto 3% auto;
+    }
     #know-more a{
-      border: 1px solid #e96232;;
+      border: 1px solid #e96232;
+      padding: 1em 1.25em;
     }
 }
