@@ -199,7 +199,7 @@ hr {
       border: 1px solid #e96232;
     }
 }
-@media screen and (max-width: 20em){
+@media screen and (max-width: 300px){
     .text-appear{
       margin-top: 40%;
     }
