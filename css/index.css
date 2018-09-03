@@ -127,7 +127,7 @@ hr {
 
 #know-more {
   bottom: 0;
-  font-size: calc(6px + 1vw);
+  font-size: calc(10px + 1vw);
   font-family: monospace;
   margin-left: 45%;
   margin-bottom: 2%;
@@ -197,6 +197,13 @@ hr {
     }
     #know-more a{
       border: 1px solid #e96232;
-      padding: 1em 1.25em;
+    }
+}
+@media screen and (max-width: 20em){
+    .text-appear{
+      margin-top: 40%;
+    }
+    #know-more a{
+      padding: 2em 1.75em;
     }
 }
