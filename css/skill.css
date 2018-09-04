@@ -1,0 +1,14 @@
+#my-skill-sectn{
+  background-color: #eee;
+  color: #222;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.skill-ch span{
+  font-size: calc(10px + 1vw);
+}
+
