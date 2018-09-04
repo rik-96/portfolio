@@ -10,7 +10,7 @@
 }
 
 #skills{
-    margin: 10% 0 0 3%;
+    margin: 5% 0 0 3%;
     display: none;
     color: white;
 }
@@ -88,6 +88,9 @@
 @media screen and (max-width: 1024px){
     .text-appear{
       margin-top: 40%;
+    }
+    #skills{
+      margin-top: 10%;
     }
 }
 
