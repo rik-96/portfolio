@@ -1,6 +1,22 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta charset="UTF-8" >
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script>
+        document.body.classList.add('js-loading');
+        window.addEventListener("load", showPage);
+        function showPage() {
+          document.body.classList.remove('js-loading');
+        }
+        </script>
+        <style>
+        .js-loading *,
+        .js-loading *:before,
+        .js-loading *:after {
+          animation-play-state: paused !important;
+        }
+        </style>
         <link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet'>
         <link href='https://fonts.googleapis.com/css?family=Love Ya Like A Sister' rel='stylesheet'>
         <link rel="stylesheet" type="text/css" href="css/header.css" />
@@ -11,8 +27,6 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script src="index.js"></script>
         <script src="anim.js"></script>
-        <meta charset="UTF-8" >
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>RAHUL KUMAR</title>
     </head>
     <body>
