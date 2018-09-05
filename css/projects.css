@@ -1,10 +1,48 @@
 #my-project-sectn{
-  color: black;
-  background-color: #eee;
+  margin-top: 10%;
+  color: #fff;
+  background-color:#222;
 }
 
 #project-sectn-head{
   font-size: calc(15px + 1.3vw);
   text-align: center;
   padding: 5% 0;
+  background-color: #e96232;
+}
+
+.project-item {
+  width: 20%;
+  height: 20vw;
+  float: left;
+  border: 10px solid #e96232;
+  margin: 5%;
+  background-color: #222;
+}
+
+.project-item img{
+  width: 100%;
+  height: 60%;
+}
+
+.project-item div{
+  color: #fff;
+  text-align: center;
+  margin-top: 15%;
+  font-size: calc(5px + 1vw);
+}
+
+@media screen and (max-width: 612px){
+  .project-item{
+    width: 30%;
+    margin: 7%;
+    height: 40vw;
+  }
+}
+
+@media screen and (max-width: 345px){
+  .project-item{
+    width: 60%;
+    height: 60vw;
+  }
 }

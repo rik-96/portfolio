@@ -14,8 +14,13 @@
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
+.skill-ch{
+  border: solid 2px black;
+}
+
 .skill-ch span{
   font-size: calc(10px + 1vw);
+  border-bottom: solid 2px black;
 }
 
 .skill-ch ul{
