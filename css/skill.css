@@ -1,5 +1,4 @@
 #my-skill-sectn{
-  background-color: #eee;
   color: #222;
   display: flex;
   flex-direction: row;
@@ -8,7 +7,19 @@
   justify-content: center;
 }
 
+#my-skill-sectn div{
+  padding: 5%;
+  margin: 4% 5%;
+  text-align: center;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
 .skill-ch span{
   font-size: calc(10px + 1vw);
 }
 
+.skill-ch ul{
+  list-style-type: none;
+  padding-left: 0;
+  font-size: calc(8px + 0.7vw);
+}

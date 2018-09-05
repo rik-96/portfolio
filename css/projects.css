@@ -1,0 +1,10 @@
+#my-project-sectn{
+  color: black;
+  background-color: #eee;
+}
+
+#project-sectn-head{
+  font-size: calc(15px + 1.3vw);
+  text-align: center;
+  padding: 5% 0;
+}
