@@ -3,20 +3,6 @@
     <head>
         <meta charset="UTF-8" >
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <script>
-        document.body.classList.add('js-loading');
-        window.addEventListener("load", showPage);
-        function showPage() {
-          document.body.classList.remove('js-loading');
-        }
-        </script>
-        <style>
-        .js-loading *,
-        .js-loading *:before,
-        .js-loading *:after {
-          animation-play-state: paused !important;
-        }
-        </style>
         <link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet'>
         <link href='https://fonts.googleapis.com/css?family=Love Ya Like A Sister' rel='stylesheet'>
         <link rel="stylesheet" type="text/css" href="css/header.css" />
@@ -25,6 +11,7 @@
         <link rel="stylesheet" type="text/css" href="css/skill.css" />
         <link rel="stylesheet" type="text/css" href="css/projects.css" />
         <link rel="stylesheet" type="text/css" href="css/contact.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script src="index.js"></script>
         <script src="anim.js"></script>
@@ -32,7 +19,7 @@
     </head>
     <body>
         <img src="back2.jpg" style="display:none;" />
-        <div class="initbackground">
+        <div id="initbackground" class="vh-fix">
             <header>
                 <div class="nav-item1">
                     <a href="/" id="logo-link">
@@ -56,71 +43,86 @@
                 <div class="hd1">Hi I'm Rahul.</div>
                 <div class="hd2">I'm a full stack developer from India. I worked on building a site a couple of years ago and instantly fell in love with web development.</div>
                 <div id="know-more"><a href="#about-me-sectn">Know more</a></div>
-                <div id="about-me-sectn" class="animm" >
-                    <img src="rk.jpg" width="300px" height="400px"/>
-                    <div id="abt-1">
-                        <div style="color: #e96232">Web Developer</div>
-                        <div style="color: #e96232">Machine Learning Enthusiast</div>
-                        <div style="color: #e96232">Guitarist</div>
-                    </div>
+            </div>
+        </div>
+        <div id = "about-outer">
+            <div id="about-me-sectn" class="animm" >
+                <img src="rk.jpg" width="300px" height="400px"/>
+                <div id="abt-1">
+                    <div style="color: #e96232">Web Developer</div>
+                    <div style="color: #e96232">Machine Learning Enthusiast</div>
+                    <div style="color: #e96232">Guitarist</div>
                 </div>
-                <div id="my-skill-sectn" class="animmm">
-                    <div id="toolbox" class="skill-ch">
-                        <span>ToolBox</span>
-                        <ul>
-                            <li>Html</li>
-                            <li>Css</li>
-                            <li>JavaScript</li>
-                            <li>Python</li>
-                        </ul>
-                    </div>
-                    <div id="currently" class="skill-ch">
-                        <span>Currently Learning</span>
-                        <ul>
-                            <li>React.js</li>
-                            <li>Node.js</li>
-                            <li>MongoDB</li>
-                            <li>Flask</li>
-                        </ul>
-                    </div>
+            </div>
+            <div id="my-skill-sectn" class="animmm">
+                <div id="toolbox" class="skill-ch">
+                    <span>ToolBox</span>
+                    <ul>
+                        <li>Html</li>
+                        <li>Css</li>
+                        <li>JavaScript</li>
+                        <li>Python</li>
+                    </ul>
                 </div>
-                <div id="my-project-sectn">
-                    <div id="project-sectn-head">Projects</div>
-                    <div class="project-row">
-                        <a href="https://rik-96.github.io/drumkit"><div class="project-item">
-                        <img src="pr1.jpg" />
-                        <div>Drum-Kit</div>
-                        </div></a>
-                        <a href="https://rik-96.github.io/"><div class="project-item">
-                        <img src="pr2.jpg" />
-                        <div>MotorMarche Frontend</div>
-                        </div></a>
-                        <a href="https://github.com/rik-96/face_detect"><div class="project-item">
-                        <img src="pr3.jpg" />
-                        <div>Face-Locator</div>
-                        </div></a>
-                        <a href="https://github.com/rik-96/motormarche-backend"><div class="project-item">
-                        <img src="pr4.png" />
-                        <div>MotorMarche Backend</div>
-                        </div></a>
-                        <a href="https://rik-96.github.io/tictactoe"><div class="project-item">
-                        <img src="pr5.png" />
-                        <div>TicTacToe</div>
-                        </div></a>
-                        <a href="https://github.com/rik-96/Neural-Network"><div class="project-item">
-                        <img src="pr6.gif" />
-                        <div>Neural Network</div>
-                        </div></a>
-                        <a href="https://rik-96.github.io/todo/"><div class="project-item">
-                        <img src="pr7.png" />
-                        <div>Todo App</div>
-                        </div></a>
-                        <a href="https://github.com/rik-96/kaggle_titanic_single_layer_nn"><div class="project-item">
-                        <img src="pr8.png" />
-                        <div>Kaggle Titanic Challenge</div>
-                        </div></a>
-                    </div>
+                <div id="currently" class="skill-ch">
+                    <span>Currently Learning</span>
+                    <ul>
+                        <li>React.js</li>
+                        <li>Node.js</li>
+                        <li>MongoDB</li>
+                        <li>Flask</li>
+                    </ul>
                 </div>
+            </div>
+            <div id="my-project-sectn">
+                <div id="project-sectn-head">Projects</div>
+                <div class="project-row">
+                    <a href="https://rik-96.github.io/drumkit"><div class="project-item">
+                    <img src="pr1.jpg" />
+                    <div>Drum-Kit</div>
+                    </div></a>
+                    <a href="https://rik-96.github.io/"><div class="project-item">
+                    <img src="pr2.jpg" />
+                    <div>MotorMarche Frontend</div>
+                    </div></a>
+                    <a href="https://github.com/rik-96/face_detect"><div class="project-item">
+                    <img src="pr3.jpg" />
+                    <div>Face-Locator</div>
+                    </div></a>
+                    <a href="https://github.com/rik-96/motormarche-backend"><div class="project-item">
+                    <img src="pr4.png" />
+                    <div>MotorMarche Backend</div>
+                    </div></a>
+                    <a href="https://rik-96.github.io/tictactoe"><div class="project-item">
+                    <img src="pr5.png" />
+                    <div>TicTacToe</div>
+                    </div></a>
+                    <a href="https://github.com/rik-96/Neural-Network"><div class="project-item">
+                    <img src="pr6.gif" />
+                    <div>Neural Network</div>
+                    </div></a>
+                    <a href="https://rik-96.github.io/todo/"><div class="project-item">
+                    <img src="pr7.png" />
+                    <div>Todo App</div>
+                    </div></a>
+                    <a href="https://github.com/rik-96/kaggle_titanic_single_layer_nn"><div class="project-item">
+                    <img src="pr8.png" />
+                    <div>Kaggle Titanic Challenge</div>
+                    </div></a>
+                </div>
+            </div>
+        </div>
+        <div id="footer">
+            <div id="footer-head">
+                Contact Me
+            </div>
+            <div>
+            <a href="#" class="footer-links"><i class="footer-icons fa fa-facebook-square" ></i></a>
+            <a href="#" class="footer-links"><i class="footer-icons fa fa-linkedin-square" ></i></a>
+            <a href="#" class="footer-links"><i class="footer-icons fa fa-google-plus-square" ></i></a>
+            <a href="#" class="footer-links"><i class="footer-icons fa fa-angellist" ></i></a>
+            <a href="#" class="footer-links"><i class="footer-icons fa fa-github-square" ></i></a>
+            <a href="#" class="footer-links"><i class="footer-icons fa fa-stack-overflow" ></i></a>
             </div>
         </div>
     </body>

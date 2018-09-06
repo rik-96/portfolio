@@ -1,14 +1,15 @@
 #my-project-sectn{
   margin-top: 10%;
   color: #fff;
-  background-color:#222;
+  background-color: #222;
+  overflow: auto;
 }
 
 #project-sectn-head{
   font-size: calc(15px + 1.3vw);
   text-align: center;
-  padding: 5% 0;
-  background-color: #e96232;
+  padding: 5% 0 0 0;
+  color: #e96232;
 }
 
 .project-item {
@@ -32,6 +33,10 @@
   font-size: calc(5px + 1vw);
 }
 
+.project-item:hover{
+  opacity: 0.7;
+}
+
 @media screen and (max-width: 612px){
   .project-item{
     width: 30%;
@@ -43,6 +48,7 @@
 @media screen and (max-width: 345px){
   .project-item{
     width: 60%;
+    margin: 15%;
     height: 60vw;
   }
 }
