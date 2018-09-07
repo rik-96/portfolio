@@ -4,17 +4,17 @@
   text-align: center;
 }
 
-#footer #footer-head{
+#footer-head{
   text-align: center;
   color: #222;
-  font-size: calc(15px + 1.3vw);
+  font-size: calc(10px + 1.3vw);
   margin: 5% auto 3% auto;
   overflow: hidden;
   white-space: nowrap;
 }
 
 .footer-links{
-  font-size: calc(5px + 5vh);
+  font-size: calc(1px + 5vh);
 }
 
 .footer-icons{
