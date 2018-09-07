@@ -60,7 +60,7 @@
             </div>
         </div>
         <div id = "about-outer">
-            <div id="about-me-sectn" class="animm" >
+            <div id="about-me-sectn" class="animm hidden" >
                 <img src="rk.jpg" width="300px" height="400px"/>
                 <div id="abt-1">
                     <div style="color: #e96232">Web Developer</div>
@@ -68,7 +68,7 @@
                     <div style="color: #e96232">Guitarist</div>
                 </div>
             </div>
-            <div id="my-skill-sectn" class="animmm">
+            <div id="my-skill-sectn" class="animmm hidden">
                 <div id="toolbox" class="skill-ch">
                     <span>ToolBox</span>
                     <ul>
@@ -91,42 +91,42 @@
             <div id="my-project-sectn">
                 <div id="project-sectn-head">Projects</div>
                 <div class="project-row">
-                    <a href="https://rik-96.github.io/drumkit"><div class="project-item">
+                    <a href="https://rik-96.github.io/drumkit"><div class="project-item hidden">
                     <img src="pr1.jpg" />
                     <div>Drum-Kit</div>
                     </div></a>
-                    <a href="https://rik-96.github.io/"><div class="project-item">
+                    <a href="https://rik-96.github.io/"><div class="project-item hidden">
                     <img src="pr2.jpg" />
                     <div>MotorMarche Frontend</div>
                     </div></a>
-                    <a href="https://github.com/rik-96/face_detect"><div class="project-item">
+                    <a href="https://github.com/rik-96/face_detect"><div class="project-item hidden">
                     <img src="pr3.jpg" />
                     <div>Face-Locator</div>
                     </div></a>
-                    <a href="https://github.com/rik-96/motormarche-backend"><div class="project-item">
+                    <a href="https://github.com/rik-96/motormarche-backend"><div class="project-item hidden">
                     <img src="pr4.png" />
                     <div>MotorMarche Backend</div>
                     </div></a>
-                    <a href="https://rik-96.github.io/tictactoe"><div class="project-item">
+                    <a href="https://rik-96.github.io/tictactoe"><div class="project-item hidden">
                     <img src="pr5.png" />
                     <div>TicTacToe</div>
                     </div></a>
-                    <a href="https://github.com/rik-96/Neural-Network"><div class="project-item">
+                    <a href="https://github.com/rik-96/Neural-Network"><div class="project-item hidden">
                     <img src="pr6.gif" />
                     <div>Neural Network</div>
                     </div></a>
-                    <a href="https://rik-96.github.io/todo/"><div class="project-item">
+                    <a href="https://rik-96.github.io/todo/"><div class="project-item hidden">
                     <img src="pr7.png" />
                     <div>Todo App</div>
                     </div></a>
-                    <a href="https://github.com/rik-96/kaggle_titanic_single_layer_nn"><div class="project-item">
+                    <a href="https://github.com/rik-96/kaggle_titanic_single_layer_nn"><div class="project-item hidden">
                     <img src="pr8.png" />
                     <div>Kaggle Titanic Challenge</div>
                     </div></a>
                 </div>
             </div>
         </div>
-        <div id="footer">
+        <div id="footer" class="hidden">
             <div id="footer-head">
                 Contact Me
             </div>
@@ -139,5 +139,39 @@
             <a href="#" class="footer-links"><i class="footer-icons fa fa-stack-overflow" ></i></a>
             </div>
         </div>
+        <script>
+            var animateHTML = function() {
+              var elems;
+              var windowHeight;
+              function init() {
+                elems = document.querySelectorAll('.hidden');
+                windowHeight = window.innerHeight;
+                elems.forEach(i => console.log(i));
+                console.log(windowHeight);
+                addEventHandlers();
+                checkPosition();
+              }
+              function addEventHandlers() {
+                window.addEventListener('scroll', checkPosition);
+                window.addEventListener('resize', init);
+              }
+              function checkPosition() {
+                for (var i = 0; i < elems.length; i++) {
+                  var positionFromTop = elems[i].getBoundingClientRect().top;
+                  console.log(positionFromTop);
+                  if (positionFromTop - windowHeight <= 0) {
+                    elems[i].className = elems[i].className.replace(
+                      'hidden',
+                      'fade-in-element'
+                    );
+                  }
+                }
+              }
+              return {
+                init: init
+              };
+            };
+            animateHTML().init();
+        </script>
     </body>
 </html>

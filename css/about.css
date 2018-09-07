@@ -42,6 +42,19 @@
   border-bottom: 2px solid black;
 }
 
+.hidden {
+  opacity: 0;
+}
+
+@keyframes fade-in {
+    from {opacity: 0; transform: scale(.7,.7)}
+    to {opacity: 1;}
+}
+.fade-in-element {
+  animation: fade-in 1.4s;
+}
+
+
 @media screen and (max-width: 700px){
   #about-me-sectn img{
     width: 100px;
