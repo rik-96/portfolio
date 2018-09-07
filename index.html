@@ -3,13 +3,6 @@
     <head>
         <meta charset="UTF-8" >
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <script>
-        document.body.classList.add('js-loading');
-        window.addEventListener("load", showPage);
-        function showPage() {
-          document.body.classList.remove('js-loading');
-        }
-        </script>
         <style>
         .js-loading *,
         .js-loading *:before,
@@ -32,7 +25,6 @@
         <title>RAHUL KUMAR</title>
     </head>
     <body>
-        <img src="back2.jpg" style="display:none;" />
         <div id="initbackground" class="vh-fix">
             <header>
                 <div class="nav-item1">
@@ -45,8 +37,8 @@
                 </div>
                 <div class="nav-item3">
                     <a href="#" class="menu-links" id="one">Home</a>
-                    <a href="#" class="menu-links" id="two">Projects</a>
-                    <a href="#" class="menu-links" id="three">Contact</a>
+                    <a href="#my-project-sectn" class="menu-links" id="two">Projects</a>
+                    <a href="#footer" class="menu-links" id="three">Contact</a>
                     <hr />
                 </div>
             </header>
@@ -140,14 +132,28 @@
             </div>
         </div>
         <script>
+        document.body.classList.add('js-loading');
+        window.addEventListener("load", showPage);
+        function showPage() {
+          document.body.classList.remove('js-loading');
+        }
+        </script>
+        <script>
             var animateHTML = function() {
               var elems;
               var windowHeight;
               function init() {
                 elems = document.querySelectorAll('.hidden');
+                if ($(window).width() < 900){
+                    for (var i = 0; i < elems.length; i++) {
+                        elems[i].className = elems[i].className.replace(
+                          'hidden',
+                          ''
+                        );
+                    }
+                return
+                }
                 windowHeight = window.innerHeight;
-                elems.forEach(i => console.log(i));
-                console.log(windowHeight);
                 addEventHandlers();
                 checkPosition();
               }
@@ -158,7 +164,6 @@
               function checkPosition() {
                 for (var i = 0; i < elems.length; i++) {
                   var positionFromTop = elems[i].getBoundingClientRect().top;
-                  console.log(positionFromTop);
                   if (positionFromTop - windowHeight <= 0) {
                     elems[i].className = elems[i].className.replace(
                       'hidden',
