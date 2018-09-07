@@ -133,6 +133,11 @@
         </div>
         <script>
         document.getElementById("initbackground").style.height = window.innerHeight + 'px';
+        if(window.innerWidth > 1024){
+            window.addEventListener('resize', function(){
+                document.getElementById("initbackground").style.height = window.innerHeight + 'px';
+            })
+        }
         document.body.classList.add('js-loading');
         window.addEventListener("load", showPage);
         function showPage() {
