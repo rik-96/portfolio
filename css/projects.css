@@ -17,8 +17,10 @@
   height: 20vw;
   float: left;
   border: 10px solid #e96232;
+  border-radius: 30%;
   margin: 5%;
   background-color: #222;
+  overflow: auto;
 }
 
 .project-item img{
