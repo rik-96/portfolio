@@ -10,28 +10,21 @@
           animation-play-state: paused !important;
         }
         </style>
-        <link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet'>
-        <link href='https://fonts.googleapis.com/css?family=Love Ya Like A Sister' rel='stylesheet'>
         <link rel="stylesheet" type="text/css" href="css/header.css" />
         <link rel="stylesheet" type="text/css" href="css/mid.css" />
         <link rel="stylesheet" type="text/css" href="css/about.css" />
         <link rel="stylesheet" type="text/css" href="css/skill.css" />
         <link rel="stylesheet" type="text/css" href="css/projects.css" />
         <link rel="stylesheet" type="text/css" href="css/contact.css" />
+        <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-        <script src="index.js"></script>
         <script src="anim.js"></script>
-        <title>RAHUL KUMAR</title>
+        <title>Rahul Kumar</title>
     </head>
     <body>
         <div id="initbackground" class="vh-fix">
             <header>
-                <div class="nav-item1">
-                    <a href="/" id="logo-link">
-                        <div id="logo">R.K.</div>
-                    </a>
-                </div>
                 <div class="nav-item2">
                     <a href="/" id="name-in-header">Rahul Kumar</a>
                 </div>
@@ -42,23 +35,30 @@
                     <hr />
                 </div>
             </header>
-            <div class="text-appear">
-                Hello There, Visitor.
-            </div>
             <div id="skills">
-                <div class="hd1">Hi I'm Rahul.</div>
-                <div class="hd2">I'm a full stack developer from India. I worked on building a site a couple of years ago and instantly fell in love with web development.</div>
-                <div id="know-more"><a href="#about-me-sectn">Know more</a></div>
+                <div id="about-me-sectn" class="animm hidden" >
+                    <img src="rk.jpg" width="30%" height="80%"/>
+                    <div id="abt-1">
+                        <div><strong>I am Rahul.</strong></div>
+                        <div>Web Developer.</div>
+                        <div>Machine Learning Enthusiast.</div>
+                        <div class="button-blue" id="know-more"><a href="/">Projects</a></div>
+                    </div>
+                </div>
             </div>
         </div>
         <div id = "about-outer">
-            <div id="about-me-sectn" class="animm hidden" >
-                <img src="rk.jpg" width="300px" height="400px"/>
-                <div id="abt-1">
-                    <div style="color: #e96232">Web Developer</div>
-                    <div style="color: #e96232">Machine Learning Enthusiast</div>
-                    <div style="color: #e96232">Guitarist</div>
+            <div id="my-intro-sectn">
+                <div id="intro-head">
+                    Personal Details
                 </div>
+                <div id="intro-body">
+                    I am currently pursuing my Bachelors in Technology in Electronics Engineering. I am a self-taught web developer and love learning new frameworks and tools. I taught myself Python two years ago. Last year, I built a site and instantly fell in love with Web Development. I also love Machine Learning and playing the guitar.
+                    <br />
+                    <br />
+                    I plan to work at a place where every day is a learning experience and the projects are challenging and interesting. If you feel you have work for me, let me know.
+                </div>
+                <div class="button-blue" id="contact-button"><a href="/">Contact</a></div>
             </div>
             <div id="my-skill-sectn" class="animmm hidden">
                 <div id="toolbox" class="skill-ch">
@@ -80,7 +80,7 @@
                     </ul>
                 </div>
             </div>
-            <div id="my-project-sectn">
+            <div id="my-project-sectn" class="animmm">
                 <div id="project-sectn-head">Projects</div>
                 <div class="project-row">
                     <a href="https://rik-96.github.io/drumkit"><div class="project-item hidden">
@@ -131,19 +131,6 @@
             <a href="#" class="footer-links"><i class="footer-icons fa fa-stack-overflow" ></i></a>
             </div>
         </div>
-        <script>
-        document.getElementById("initbackground").style.height = window.innerHeight + 'px';
-        if(window.innerWidth > 1024){
-            window.addEventListener('resize', function(){
-                document.getElementById("initbackground").style.height = window.innerHeight + 'px';
-            })
-        }
-        document.body.classList.add('js-loading');
-        window.addEventListener("load", showPage);
-        function showPage() {
-          document.body.classList.remove('js-loading');
-        }
-        </script>
         <script>
             var animateHTML = function() {
               var elems;

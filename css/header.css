@@ -1,29 +1,16 @@
 body {
     margin: 0;
-    color: white;
-    font-family: sans-serif;
-}
-
-#initbackground{
-  background: url(../back2.jpg) no-repeat center center;
-  background-size: cover;
-}
-
-#logo {
-    border: 3px solid #e96232;
-    border-radius: 50%;
-    color: #e96232;
-    font-family: "Love Ya Like A Sister";
-    width: 50px;
-    height: 50px;
-    line-height:50px;
-    text-align: center;
-    font-weight: bold;
+    color: #222;
+    font-family: "poppins", sans-serif;
 }
 
 header {
     padding: 15px 30px 70px 30px;
-    border-bottom: 2px solid #e96232;
+    background-color: white;
+}
+
+#initbackground{
+    background-color: #f9f9ff;
 }
 
 #logo-link {
@@ -31,13 +18,9 @@ header {
 }
 
 #name-in-header {
-    color: white;
+    color: #222;
     text-decoration: none;
-    font-family: "Lobster";
-}
-
-.nav-item1 {
-    float: left;
+    font-family: "poppins";
 }
 
 .nav-item2 {
@@ -46,10 +29,10 @@ header {
     font-size: 30px;
     float: left;
     line-height: 2;
+    font-size: calc(15px + 1vw);
 }
 
 .nav-item3{
-    width: 237px;
     float: right;
     font-size: 20px;
     line-height: 2;
@@ -63,8 +46,9 @@ header {
     width: 25%;
     margin: 0;
     text-decoration: none;
-    color: white; /*63AA9C*/
-    font-family: "Lobster";
+    color: #222; /*63AA9C*/
+    font-family: "poppins";
+    font-size: calc(10px + 0.5vw);
 }
 
 #two:hover ~ hr {
@@ -81,7 +65,7 @@ hr {
   height: .15rem;
   width: 20%;
   margin: 0;
-  background: #e96232;
+  background: #62bdfc;
   border: none;
   transition: .3s ease-in-out;
 }

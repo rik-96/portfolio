@@ -1,6 +1,20 @@
+#intro-head{
+  font-size: calc(10px + 1.6vw);
+  margin: 10% 0 0 5%;
+}
+
+#intro-body{
+  font-size: calc(8px + 0.5vw);
+  margin: 0 2% 2% 5%;
+  padding: 2% 0 0 2%;
+  border-left: solid 3px #8490ff;
+}
+
+#my-intro-sectn #contact-button{
+  margin: 5% 2% 5% 5%;
+}
+
 #about-me-sectn{
-  margin-top: 10%;
-  margin-bottom: 10%;
   color: #222;
   display: flex;
   flex-direction: row;
@@ -35,11 +49,6 @@
 #abt-1{
   padding-left: 10%;
   font-size: calc(10px + 1vw);
-  line-height: 1.5em;
-}
-
-#abt-1 div{
-  border-bottom: 2px solid black;
 }
 
 .hidden {
@@ -56,12 +65,7 @@
 
 
 @media screen and (max-width: 700px){
-  #about-me-sectn img{
-    width: 100px;
-    height: 133px;
-  }
   #abt-1{
-    padding-left: 5%;
-    padding-top: 10%;
+    margin-top: 10%;
   }
 }
