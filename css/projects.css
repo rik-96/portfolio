@@ -1,7 +1,5 @@
 #my-project-sectn{
-  margin-top: 10%;
-  color: #fff;
-  background-color: #222;
+  padding: 5% 010% 0;
   overflow: auto;
 }
 
@@ -9,17 +7,14 @@
   font-size: calc(15px + 1.3vw);
   text-align: center;
   padding: 5% 0 0 0;
-  color: #e96232;
 }
 
 .project-item {
   width: 20%;
   height: 20vw;
   float: left;
-  border: 10px solid #e96232;
-  border-radius: 30%;
+  border: 2px solid #222;
   margin: 5%;
-  background-color: #222;
   overflow: auto;
 }
 
@@ -29,7 +24,6 @@
 }
 
 .project-item div{
-  color: #fff;
   text-align: center;
   margin-top: 15%;
   font-size: calc(5px + 1vw);

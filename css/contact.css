@@ -1,12 +1,19 @@
+.divider{
+  width: 70%;
+  height: 1px;
+  margin: 0 15%;
+  background: linear-gradient(to right, #fff, #aaa, #fff);
+}
+
 #footer{
-  background-color: #fff;
+  background-color: #04091e;
   overflow: auto;
   text-align: center;
+  color: white;
 }
 
 #footer-head{
   text-align: center;
-  color: #222;
   font-size: calc(10px + 1.3vw);
   margin: 5% auto 3% auto;
   overflow: hidden;
@@ -18,7 +25,7 @@
 }
 
 .footer-icons{
-  color: black;
+  color: white;
   font-size: 100%;
   margin: 2% 3%;
 }
