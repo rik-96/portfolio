@@ -1,5 +1,5 @@
 #my-project-sectn{
-  padding: 5% 010% 0;
+  padding: 5% 10% 0;
   overflow: auto;
 }
 
@@ -9,13 +9,18 @@
   padding: 5% 0 0 0;
 }
 
+.project-row{
+  text-align: center;
+}
+
 .project-item {
   width: 20%;
   height: 20vw;
-  float: left;
+  display: inline-block;
   border: 2px solid #222;
   margin: 5%;
   overflow: auto;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
 .project-item img{
@@ -38,6 +43,18 @@
     width: 30%;
     margin: 7%;
     height: 40vw;
+  }
+}
+
+@media screen and (max-width: 800px){
+  #about-me-sectn{
+    flex-direction: column;
+  }
+  #about-me-sectn img{
+    width: 50%;
+  }
+  #about-me-sectn #abt-1{
+    display: block;
   }
 }
 
