@@ -5,8 +5,12 @@ body {
 }
 
 header {
-    padding: 15px 30px 70px 30px;
+    padding: 1%;
     background-color: white;
+    position: fixed;
+    width: 100%;
+    display: block;
+    top: 0;
 }
 
 #initbackground{
@@ -51,6 +55,33 @@ header {
     font-size: calc(10px + 0.5vw);
 }
 
+.dropdown{
+    position: relative;
+    display: none;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    width: 200%;
+    margin-left: -130%;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    background-color: white;
+}
+
+.dropdown-content a{
+    color: #222;
+    display: block;
+    padding: 12px 0 12px 10px;
+    text-decoration: none;
+    font-size: calc(10px + 0.5vw);
+}
+
+.show{
+    display: block;
+}
+
 #two:hover ~ hr {
   margin-left: 30%;
   width: 26%;
@@ -72,13 +103,18 @@ hr {
 
 @media screen and (max-width: 720px) {
     header {
-        padding: 15px 10px 50px 10px;
+        padding: 0;
     }
     .nav-item2 {
         line-height: 2;
-        font-size: 20px;
     }
-    .nav-item3{
+    .nav-item3 .menu-links{
         display: none;
+    }
+    #menu-link-hr{
+        display: none;
+    }
+    .dropdown{
+        display: block;
     }
 }
