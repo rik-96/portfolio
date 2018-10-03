@@ -1,67 +1,96 @@
 #my-project-sectn{
-  padding: 5% 10% 0;
+  padding: 5% 0 10% 0;
   overflow: auto;
+  background-color: #04091e;
 }
 
 #project-sectn-head{
+  color: white;
   font-size: calc(15px + 1.3vw);
   text-align: center;
-  padding: 5% 0 0 0;
+  padding: 5% 0 5% 0;
 }
 
-.project-row{
-  text-align: center;
+.slide-container{
+  width: 50%;
+  position: relative;
+  margin: auto;
 }
 
-.project-item {
-  width: 20%;
-  height: 20vw;
-  display: inline-block;
-  border: 2px solid #222;
-  margin: 5%;
-  overflow: auto;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+.slides{
+  display: none;
+}
+
+.prev, .next{
+  cursor: pointer;
+  position: absolute;
+  top: 30%;
+  width: auto;
+  padding: 10px;
+  color: black;
+  background-color: white;
+  font-weight: bold;
+  font-size: calc(10px + 1vw);
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  margin-left: -20%;
+  box-shadow: 0 4px 8px 2px rgba(255, 255, 255, 0.2);
+  z-index: 5;
+}
+
+.next{
+  right: 0;
+  border-radius: 3px 0 0 3px;
+  margin-right: -20%;
+}
+
+.prev:hover, .next:hover{
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.project-item{
+  text-decoration: none;
 }
 
 .project-item img{
-  width: 100%;
-  height: 60%;
+  width: 50vw;
+  height: 50vh;
+  box-shadow: 0 4px 8px 4px rgba(255, 255, 255, 0.2);
+  z-index: 5;
 }
 
 .project-item div{
-  text-align: center;
-  margin-top: 15%;
+  color: #fff;
   font-size: calc(5px + 1vw);
+  padding: 10% 12px;
+  bottom: 8px;
+  text-align: center;
 }
 
-.project-item:hover{
-  opacity: 0.7;
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
 }
 
-@media screen and (max-width: 612px){
-  .project-item{
-    width: 30%;
-    margin: 7%;
-    height: 40vw;
-  }
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
 }
 
-@media screen and (max-width: 800px){
-  #about-me-sectn{
-    flex-direction: column;
-  }
-  #about-me-sectn img{
-    width: 50%;
-  }
-  #about-me-sectn #abt-1{
-    display: block;
-  }
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
 }
 
-@media screen and (max-width: 345px){
-  .project-item{
-    width: 60%;
-    margin: 15%;
-    height: 60vw;
+@media screen and (max-width: 750px){
+  .prev{
+    margin-left: -30%;
+    top: 40%;
+  }
+  .next{
+    margin-right: -30%;
+    top: 40%;
   }
 }
