@@ -93,4 +93,7 @@
     margin-right: -30%;
     top: 40%;
   }
+  .project-item img{
+    height: 30vh;
+  }
 }
