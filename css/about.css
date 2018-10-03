@@ -22,12 +22,12 @@
   align-items: center;
   justify-content: center;
   overflow: hidden;
-  min-height: 100vh;
   width: 100%;
 }
 
 #about-me-sectn img{
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin-top: 10%;
 }
 
 .ball {
